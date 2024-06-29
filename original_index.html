@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: #000;
+      /*background-color: #F0F1EC;*/
+      
+    }
+    .item{
+      background-color: #F0F1EC;
+    }
+    .red{
+     display: flex;
+     background-color: #E72F24; 
+     align-items: center;
+     justify-content: center;
+     /*border-right: 9px solid #232629;
+     border-bottom: 9px solid #232629;*/
+    }
+    .two{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /*border-bottom: 9px solid #232629;*/
+    }
+    .three{
+      display: grid;
+     /*align-items: center;
+     justify-content: center;*/
+     /*border-bottom: 9px solid #232629;   */   
+    }
+    .four{
+     display: grid;
+     /*align-items: center;
+     justify-content: center;
+     border-bottom: 9px solid #232629;      */
+    }
+    .row21{
+      display: grid;
+     /*align-items: center;
+     justify-content: center;
+     border-right: 9px solid #232629;
+     border-bottom: 9px solid #232629;*/
+     grid-row: span 2;
+    }
+    .row22{
+      display: grid;
+     /*align-items: center;
+     justify-content: center;
+     border-right: 9px solid #232629;
+     border-bottom: 9px solid #232629;*/
+     grid-column: span 2;     
+     grid-row: span 2;
+    }
+    .row23{
+      background-color: #004592;
+      /*border-bottom: 15px solid #232629;*/
+    }
+    .row24{
+     display: grid;
+    }
+    .row31{
+      border-right: 9px solid #232629;
+    }
+    .row32{
+      background-color: #F9D01E;
+    }
+    .row33{
+      background-color: #232629;
+    }
+    .row34{
+      display: grid;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+  <div class="red"><b>red-test</b></div>
+  <div class="two">two</div>
+  <div class="three">three</div>
+  <div class="four">four</div>
+  <div class="row21">row21</div>
+  <div class="row22">row22</div>
+  <div class="row23">row23</div>
+  <div class="row24">row24</div>
+  <div class="row31">row31</div>
+  <div class="row32">row32</div>
+  <div class="row33">row33</div>
+  <div class="row34">row34</div>
+  <div class="item">item</div>
+  </div>
+</body>
+
+</html>

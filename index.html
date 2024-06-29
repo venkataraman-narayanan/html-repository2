@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 640px;
+      width: 645px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 120px 300px 100px 80px;
+      grid-template-rows: 50px 200px 120px 70px 50px 50px 10px;
+      gap: 15px;
+      border: 10px solid #232629;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .white1 {
+      grid-column: span 2;
+    }
+    .yellow1{
+      grid-column: span 2;
+      background-color: #ffd700;
+    }
+
+    .red {
+      grid-row: span 2;
+      grid-column: span 2;
+      background-color: #E72F24;
+    }
+
+    .yellow2{
+      grid-column: span 2;
+      background-color: #ffd700;
+    }
+
+    .black{
+      background-color: #000000;
+    }
+
+    
+    .white2 {
+      grid-column: span 2;
+    }
+
+    .blue {
+      background-color: #0000ff;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .white3 {
+      grid-row: span 2;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .white4 {
+      grid-column: span 3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="container">
+    
+    <div class="item white1"></div>
+    <div class="item yellow1"></div>
+
+    <div class="item red"></div>
+    <div class="item yellow2"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    
+    <div class="item black"></div>
+    <div class="item"></div>
+    <div class="item white2"></div>
+
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item blue"></div>
+
+    <div class="item white3"></div>
+    <div class="item black"></div>
+
+    <div class="item white4"></div>
+
+  </div>
+</body>
+
+</html>
